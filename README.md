@@ -1,10 +1,11 @@
 ### This Repository contains scripts and configuration for Installing a single-node vSphere VCSA and Tanzu Community Edition
 
-My Homelab setup includes (Cost on amazon 2021/11/01) $889.96
+My Homelab setup includes (Cost on amazon 2021/11/01) $980.95
 
 1. Intel NUC 10 Performance Kit – Intel Core i5 Processor (Tall Chassis) $549.99
-1. Crucial 32GB Single DDR4 2666 MT/S CL19 SODIMM 260-Pin Memory - CT32G4SFD8266 (x2) $129.99ea $259.98
+1. Crucial 32GB Single DDR4 2666 MT/S CL19 SODIMM 260-Pin Memory - CT32G4SFD8266 (x2) $129.99ea/$259.98
 1. Samsung 970 EVO Plus SSD 500GB - M.2 NVMe Interface Internal Solid State Drive with V-NAND Technology (MZ-V7S500B/AM) $79.99
+1. Crucial MX500 1TB 3D NAND SATA 2.5 Inch Internal SSD, up to 560MB/s - CT1000MX500SSD1 $90.99
 
 Note: You will need a usb keyboard for the initial ESXi installation but not after that.
 
