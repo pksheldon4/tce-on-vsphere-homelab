@@ -1,0 +1,48 @@
+CLUSTER_PLAN: dev
+NAMESPACE: default
+CNI: antrea
+
+#! ---------------------------------------------------------------------
+#! Node configuration
+#! ---------------------------------------------------------------------
+
+VSPHERE_CONTROL_PLANE_NUM_CPUS: 2
+VSPHERE_CONTROL_PLANE_DISK_GIB: 40
+VSPHERE_CONTROL_PLANE_MEM_MIB: 4096
+VSPHERE_WORKER_NUM_CPUS: 2
+VSPHERE_WORKER_DISK_GIB: 40
+VSPHERE_WORKER_MEM_MIB: 4096
+
+#! ---------------------------------------------------------------------
+#! vSphere configuration
+#! ---------------------------------------------------------------------
+
+#! These 3 values need to be copied from the generated management yaml found in ~/.config/tanzu/tkg/clusterconfigs/xxxx.yaml
+VSPHERE_SSH_AUTHORIZED_KEY:
+VSPHERE_PASSWORD:
+VSPHERE_TLS_THUMBPRINT:
+
+VSPHERE_NETWORK: /TCE-Datacenter/network/VM Network
+VSPHERE_USERNAME: administrator@tanzu.local
+VSPHERE_SERVER: 192.168.8.105
+VSPHERE_DATACENTER: /TCE-Datacenter
+VSPHERE_RESOURCE_POOL: /TCE-Datacenter/host/TCE-Cluster/Resources/TCE-ResourcePool/WorkloadResources
+VSPHERE_DATASTORE: /TCE-Datacenter/datastore/local-vmfs1
+VSPHERE_FOLDER: /TCE-Datacenter/vm/TCE-VMs/WorkloadVMs
+VSPHERE_INSECURE: false
+VSPHERE_CONTROL_PLANE_ENDPOINT: 192.168.8.7
+
+ENABLE_MHC: true
+MHC_UNKNOWN_STATUS_TIMEOUT: 5m
+MHC_FALSE_STATUS_TIMEOUT: 12m
+
+ENABLE_AUDIT_LOGGING: true
+
+ENABLE_DEFAULT_STORAGE_CLASS: true
+
+CLUSTER_CIDR: 100.96.0.0/11
+SERVICE_CIDR: 100.64.0.0/13
+
+OS_ARCH: amd64
+OS_NAME: photon
+OS_VERSION: "3"
