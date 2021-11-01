@@ -8,7 +8,7 @@ My Homelab setup includes (Cost on amazon 2021/11/01) $889.96
 
 Note: You will need a usb keyboard for the initial ESXi installation but not after that.
 
-I try and follow William Lam's [blog](https://williamlam.com) regularly even though much of it goes over my head. When Tanzu Community Edition was released, I really wanted to be able to install it on my homelab and hoped he would release something. After some trial and error trying to decide which pieces of his previous [post](https://williamlam.com/2020/11/complete-vsphere-with-tanzu-homelab-with-just-32gb-of-memory.html) were relevant, I found his new post on installing vcsa without dns and ntp (link above) and realized I could greatly simplify the entire process.
+I try and follow William Lam's [blog](https://williamlam.com) regularly even though much of it goes over my head. When Tanzu Community Edition was released, I really wanted to be able to install it on my homelab and hoped he would release something. After some trial and error trying to decide which pieces of his previous [post](https://williamlam.com/2020/11/complete-vsphere-with-tanzu-homelab-with-just-32gb-of-memory.html) were relevant, I found his new post on [installing vcsa without dns and ntp](https://williamlam.com/2021/10/can-you-really-deploy-the-vcenter-server-appliance-vcsa-without-dns-and-ntp.html) and realized I could greatly simplify the entire process.
 
 This repo is a result of that effort, as well as some more learnings on the vSphere CLI to script the creation of folders for organizing TCE.
 
