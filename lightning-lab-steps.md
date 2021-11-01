@@ -25,11 +25,13 @@ My Router Gateway is 192.168.8.1 and my DHCP Range is 192.168.8.10-192.168.8.99.
 1. cd into the cli installer directory for macos
 1. `cd ~/software/VMware-VCSA/vcsa-cli-installer/mac/`
 
+
 #### Run the installer
 
 1. Excute the VCSA CLI Installer with the following (Change the path to the tce.tanzu.local.json file as necessary)
 1. `./vcsa-deploy install -v --accept-eula --no-ssl-certificate-verification ~/Documents/GitHub/pksheldon4/tce-on-vsphere-homelab/tce.tanzu.local.json`
 1. This will run for about 20-30 minutes.
+
 
 ## Setup vSphere for Tanzu Community Edition
 
@@ -48,7 +50,13 @@ This step requires Powershell available on your mac with the VMware PowerCLI ins
 
 ## Prepare to Deploy Tanzu Community Edition on vSphere
 
-Follow the instructions under the `Procedure` section. https://tanzucommunityedition.io/docs/latest/vsphere/
+Follow the instructions under the `Procedure` section of the TCE/vsphere docs - https://tanzucommunityedition.io/docs/latest/vsphere/
+
+Specifically:
+
+1. Download the photon-3-kube-v1.21.2+vmware.1-tkg.2-12816990095845873721.ova file.
+1. Generate an SSH Key pair
+
 
 ### Create Management Cluster
 
@@ -56,6 +64,7 @@ Follow the instructions under the `Procedure` section. https://tanzucommunityedi
 1. Follow the Prompts filling in each of the sections. (There are several sections you can leave blank.)
 1. When this is completed, it should have updated your ~/.kube/config file to include the management cluster.
 1. Switch to the management cluster and you can run commands like `kubectl get nodes -o wide` to see your management nodes. `kubectl get apps -A` will show you the kapp apps that are running.
+
 
 ### Create Workload Cluster
 
