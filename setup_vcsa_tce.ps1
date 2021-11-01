@@ -1,11 +1,11 @@
 $VCSAHostname = "192.168.8.105"
 $VCSAUsername = "administrator@tanzu.local"
-$VCSAPassword =  $env:VCSA_PWD
+$VCSAPassword =  "VMware!"
 $DatacenterName = "TCE-Datacenter"
 $DatastoreName = "local-vmfs1" ## This must match your setup. The ESXi default is datastore1. I have 2 and name them local-vmfs1 and local-vmfs2.
 $ClusterName = "TCE-Cluster"
 $ESXiHostname = "192.168.8.100"
-$ESXiPassword = $env:ESXI_PWD
+$ESXiPassword = "VMware!"
 $ResourcePoolName= "TCE-ResourcePool"
 $VMFolderName = "TCE-VMs"
 
