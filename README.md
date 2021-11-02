@@ -16,3 +16,21 @@ This repo is a result of that effort, as well as some more learnings on the vSph
 For the Tanzu Community Edition (TCE) install pieces, I followed the official documentation. https://tanzucommunityedition.io/docs/latest/vsphere-intro/
 
 The step by step guide to using this repo is broken out [here](lightning-lab-steps.md).
+
+---
+
+NOTE: If you run the CLI version of the management-cluster installer, you will see the below message. It's not as obvious using the Browser-based installed but this repo is installing Tanzu Community Edition on vSphere _in a non-integrated way_.
+
+```text
+vSphere 7.0 Environment Detected.
+
+You have connected to a vSphere 7.0 environment which does not have vSphere with Tanzu enabled. vSphere with Tanzu includes
+an integrated Tanzu Kubernetes Grid Service which turns a vSphere cluster into a platform for running Kubernetes workloads in dedicated
+resource pools. Configuring Tanzu Kubernetes Grid Service is done through vSphere HTML5 client.
+
+Tanzu Kubernetes Grid Service is the preferred way to consume Tanzu Kubernetes Grid in vSphere 7.0 environments. Alternatively you may
+deploy a non-integrated Tanzu Kubernetes Grid instance on vSphere 7.0.
+Note: To skip the prompts and directly deploy a non-integrated Tanzu Kubernetes Grid instance on vSphere 7.0, you can set the 'DEPLOY_TKG_ON_VSPHERE7' configuration variable to 'true'
+```
+
+You can continue using the CLI installer by running it with the environment variable `DEPLOY_TKG_ON_VSPHERE7=true tanzu management-cluster create -f management.yaml`
