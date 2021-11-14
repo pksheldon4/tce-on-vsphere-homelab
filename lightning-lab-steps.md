@@ -33,7 +33,7 @@ My Router Gateway is 192.168.8.1 and my DHCP Range is 192.168.8.10-192.168.8.99.
 
 ## Setup vSphere for Tanzu Community Edition
 
-This step requires Powershell available on your mac with the VMware PowerCLI installed (See comments in setup_vcsa_tce.ps1)
+This step requires Powershell available on your mac with the VMware PowerCLI installed (See comments in [setup_vcsa_tce.ps1](/setup_vcsa_tce.ps1)
 
 1. cd into this repository (Change the path as necessary)
 1. `cd ~/Documents/GitHub/pksheldon4/tce-on-vsphere-homelab`
